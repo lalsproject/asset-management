@@ -1,0 +1,32 @@
+.tableFixHead          { overflow: auto; height: auto; width: 100%; }
+.tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
+.tableFixHead tbody th { position: sticky; left: 0; }
+
+
+
+/* Just common table stuff. Really. */
+/* https://stackoverflow.com/questions/21168521/table-fixed-header-and-scrollable-body */
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 2px 2px; white-space: nowrap; }
+th     { background:#eee; }
+
+
+/* https://stackoverflow.com/questions/55673873/sticky-table-header-with-two-header-rows */
+
+.tableFixHead2          {
+    overflow: auto; height: 500px; width: 100%;
+}
+
+thead tr.first th, thead tr.first td {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    background: #eee;
+}
+
+
+thead tr.second th, thead tr.second td {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    background: #eee;
+}
